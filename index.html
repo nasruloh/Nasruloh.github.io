@@ -37,9 +37,24 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    
+    <style>
+      body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      </style>
   </head>
 
   <body>
+    <button onclick="myFunction()">Toggle dark mode</button>
     <!-- ======= Mobile nav toggle button ======= -->
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
     
@@ -821,5 +836,11 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+</script>
   </body>
 </html>
